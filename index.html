@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ===== META: 基本設定 ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO: meta基本設定 ===== -->
+    <title>予言屋・アタルンデス | 運命を強制書き換えする禁断の鑑定</title>
+    <meta name="description" content="政財界の重鎮が深夜に密かに訪れる禁断の鑑定所。統計学では解明不可能な「運命の強制修正」。あなたの人生を劇的に変えるための、完全予約制・深淵の鑑定体験。">
+    <meta name="keywords" content="予言,アタルンデス,運命強制修正,禁断の鑑定,引き寄せ,人生変革">
+    <meta name="author" content="予言屋・アタルンデス">
+    <link rel="canonical" href="https://atarundesu-fortune.example.com/">
+
+    <!-- ===== SEO: OGP (SNS共有用) ===== -->
+    <meta property="og:title" content="予言屋・アタルンデス | 運命を書き換える禁断の鑑定">
+    <meta property="og:description" content="あなたの人生は、まだ修正可能です。深夜の静寂の中で行われる、禁断の予言鑑定。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atarundesu-fortune.example.com/">
+    <meta property="og:image" content="https://muraimuneaki.net/urayama/images/rec/40.jpg">
+    <meta property="og:site_name" content="予言屋・アタルンデス">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ===== SEO: 構造化データ (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "予言屋・アタルンデス",
+      "description": "運命を強制的に書き換える、深夜専門の予言鑑定サロン。",
+      "priceRange": "￥1,200,000 - ￥10,000,000"
+    }
+    </script>
+
+    <!-- ===== STYLE: CSS変数定義 ===== -->
+    <style>
+        :root {
+            --bg-body: #1a1410;
+            --bg-section-alt: #251c14;
+            --bg-footer: #0f0c08;
+            --color-gold: #d4af37;
+            --color-gold-bright: #f5e6c8;
+            --color-text: #e0d5c1;
+            --font-main: 'Georgia', 'Yu Mincho', serif;
+            --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* ===== STYLE: リセット・共通 ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-body); color: var(--color-text); font-family: var(--font-main); line-height: 1.8; letter-spacing: 0.15em; font-size: 16px; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { color: var(--color-gold); font-weight: normal; margin-bottom: 30px; letter-spacing: 0.25em; line-height: 1.4; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        section { padding: 80px 20px; border-bottom: 1px solid #332a22; }
+        .bg-alt { background-color: var(--bg-section-alt); }
+        .btn { display: inline-block; padding: 20px 50px; border: 1px solid var(--color-gold); color: var(--color-gold); transition: var(--transition); cursor: pointer; background: transparent; font-size: 1.1rem; letter-spacing: 0.2em; text-transform: uppercase; }
+        .btn:hover { background: var(--color-gold); color: #1a1410; }
+
+        /* ===== STYLE: ナビゲーション ===== */
+        header { position: fixed; width: 100%; top: 0; z-index: 1000; background: rgba(26, 20, 16, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-gold); }
+        nav { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+        .logo { font-size: 1.5rem; letter-spacing: 0.4em; color: var(--color-gold); font-weight: bold; }
+        .nav-links { display: flex; gap: 40px; }
+        .hamburger { display: none; font-size: 24px; cursor: pointer; color: var(--color-gold); }
+
+        /* ===== STYLE: ヒーローセクション ===== */
+        .hero { height: 90vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(26, 20, 16, 0.9), rgba(58, 42, 26, 0.7)), url('https://muraimuneaki.net/urayama/images/rec/40.jpg'); background-size: cover; background-position: center; text-align: center; border-bottom: 3px double var(--color-gold); position: relative; }
+        .hero-content { position: relative; z-index: 1; padding: 40px; border: 1px solid rgba(212, 175, 55, 0.3); background: rgba(0,0,0,0.2); }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; color: #fff; margin-bottom: 40px; }
+
+        /* ===== STYLE: カード・グリッド ===== */
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
+        .card { border: 1px solid #4a3c2c; padding: 40px; background: #1a1410; transition: var(--transition); text-align: center; }
+        .card:hover { border-color: var(--color-gold); transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .price-text { color: #ffffff; font-size: 1.6rem; font-weight: bold; margin: 20px 0; display: block; padding: 10px; background: rgba(212, 175, 55, 0.1); border: 1px solid var(--color-gold); }
+        
+        /* ===== STYLE: フォーム ===== */
+        .contact-form { max-width: 700px; margin: 60px auto 0; display: flex; flex-direction: column; gap: 25px; }
+        input, textarea, select { background: #0f0c08; border: 1px solid #4a3c2c; color: #fff; padding: 20px; font-family: var(--font-main); width: 100%; font-size: 1rem; }
+        select option { background: #1a1410; color: #fff; padding: 10px; }
+        
+        /* ===== STYLE: フッター ===== */
+        footer { background: var(--bg-footer); padding: 80px 20px; text-align: center; border-top: 1px solid var(--color-gold); }
+
+        /* ===== STYLE: レスポンシブ (タブレット) ===== */
+        @media (max-width: 1023px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ===== STYLE: レスポンシブ (スマホ) ===== */
+        @media (max-width: 767px) {
+            .grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; position: absolute; top: 80px; left: 0; width: 100%; background: var(--bg-footer); flex-direction: column; padding: 40px 0; border-bottom: 2px solid var(--color-gold); text-align: center; }
+            .nav-links.active { display: flex; }
+            .hamburger { display: block; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== SECTION: ナビゲーションバー ===== -->
+    <header>
+        <div class="container nav">
+            <div class="logo">ATARUNDESU</div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">真実</a>
+                <a href="#features">強み</a>
+                <a href="#courses">鑑定</a>
+                <a href="#contact">予約</a>
+            </nav>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== SECTION: ヒーロー ===== -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>運命の強制修正</h1>
+                <p>統計学で語られる幸福など、不要です。<br>あなたの人生の「設定」を、今夜書き換えます。</p>
+                <a href="#courses" class="btn">禁断の扉を開く</a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: About / 概要 ===== -->
+        <section id="about">
+            <div class="container">
+                <h2>深淵なる鑑定の真実</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto;">世の中には二種類の人間しかいません。運命に翻弄される者と、運命を支配する者です。私は、あなたの魂の設計図を直接編集し、望む未来へパラレルシフトさせる唯一の予言屋です。現状が絶望的であっても、それは単なる「誤った設定」に過ぎません。</p>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: 特徴・強み ===== -->
+        <section id="features" class="bg-alt">
+            <div class="container">
+                <h2>なぜ、選ばれし者が集うのか</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>完全非公開の秘匿性</h3>
+                        <p>誰にも知られることなく、あなたの運命を操作します。絶対的なプライバシー保護をお約束します。</p>
+                    </article>
+                    <article class="card">
+                        <h3>現実への物理的介入</h3>
+                        <p>量子レベルで現実を書き換え、あなたの望む結果を強引に引き寄せます。単なる気休めではありません。</p>
+                    </article>
+                    <article class="card">
+                        <h3>永続的な運命の固定</h3>
+                        <p>一度書き換えた運命は、二度と元に戻ることはありません。あなたは新しい人生の支配者となります。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: サービス・コンテンツ詳細 ===== -->
+        <section id="courses">
+            <div class="container">
+                <h2>禁忌の鑑定コース</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>運命再起動</h3>
+                        <span class="price-text">￥1,200,000</span>
+                        <p>人生の滞っている流れを一度停止し、強制的に再起動させます。</p>
+                    </article>
+                    <article class="card">
+                        <h3>魂の深層編集</h3>
+                        <span class="price-text">￥5,500,000</span>
+                        <p>失敗の記憶を消去し、成功しかなかった人生へと書き換えます。</p>
+                    </article>
+                    <article class="card">
+                        <h3>次元超越・神域</h3>
+                        <span class="price-text">￥10,000,000～</span>
+                        <p>現実そのものを歪ませ、望む別の世界線へ強制的に遷移させます。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: お問い合わせフォーム ===== -->
+        <section id="contact" class="bg-alt">
+            <div class="container">
+                <h2>運命の予約フォーム</h2>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="氏名" required>
+                    <input type="email" placeholder="メールアドレス" required>
+                    <select required>
+                        <option value="" disabled selected>鑑定コースを選択してください（クリックで開く）</option>
+                        <option value="1">運命再起動 (￥1,200,000)</option>
+                        <option value="2">魂の深層編集 (￥5,500,000)</option>
+                        <option value="3">次元超越・神域 (￥10,000,000～)</option>
+                    </select>
+                    <textarea rows="5" placeholder="あなたが手に入れたい「未来」について詳しくご記入ください。" required></textarea>
+                    <button type="submit" class="btn">運命を確定する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== SECTION: フッター ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 予言屋・アタルンデス. All Secrets Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== JS: ハンバーガーメニュー =====
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+
+        // ===== JS: スムーススクロール =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // ===== JS: フォーム送信処理 =====
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('運命の予約を受け付けました。準備を整えてお待ちください。');
+        });
+    </script>
+</body>
+</html>
